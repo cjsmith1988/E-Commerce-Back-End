@@ -1,19 +1,23 @@
 # E-Commerce-Back-End
 [![License: MIT License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
  
-**Project name**: Employee Tracker Challenge
+**Project name**: e-commerce Back End Challenge
 
-**Description**: This project purpose was to test skills learned with mySQL database and further node.js & inquirer.
+**Description**: This project purpose was to test skills learned with Sequelize and mySQL database and further node.js & Express.
 
-**Special Notes**: this project is command line applicatoin. the modules used are: Inquirer, mysql2, and console.table.
+**Special Notes**: this project is command line applicatoin. the modules used are: Express, mysql2, dotenv, and Sequelize.
 
 **Installation**: 	
 
-access Github repository here: https://github.com/cjsmith1988/Employee-Tracker
+access Github repository here: https://github.com/cjsmith1988/E-Commerce-Back-End
+
+Live URL: https://immense-ridge-01896.herokuapp.com/api/
 
 🎥 Part 1: https://youtube.com/embed/40Ln_GPJjPM
 
 🎥 Part 2: https://youtube.com/embed/Y3TF6MJbKEE
+
+🎥 Part 3: https://youtube.com/embed/Y3TF6MJbKEE
 
 
 To download this application localy follow these steps:
@@ -24,9 +28,15 @@ To download this application localy follow these steps:
 
 - In the command line type "npm i"
 
-- Open a command line in the location of the cloned directory and type "mysql -u root -h localhost -p" and "source ./db/schema.sql" and "source ./db/seeds.sql"
+- Open a command line in the location of the cloned directory and type "mysql -u root -h localhost -p" and "CREATE DATABASE ecommerce_db;" and "use ecommerce_db;"
 
-- this will install the mySQL database
+- this will create the mySQL database
+
+- create a new file in the directory to store your connection information by using the git bash command "touch ./.env"
+
+- next enter this command: "echo "DB_NAME='ecommerce_db'
+DB_USER='root'
+DB_PW='' > ./.env"
 
 - Back in the GItBash console type "node index" to start the application
 
@@ -71,4 +81,5 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
 ![Api Category view](https://github.com/cjsmith1988/E-Commerce-Back-End/blob/main/images/insomniaCategoryScreenGrab.PNG?raw=true)
-
+![Api Product view](https://github.com/cjsmith1988/E-Commerce-Back-End/blob/main/images/insomniaProductsScreenGrab.PNG?raw=true)
+![Api Product POST view](https://github.com/cjsmith1988/E-Commerce-Back-End/blob/main/images/insomniaProductsPOSTScreenGrab.PNG?raw=true)
