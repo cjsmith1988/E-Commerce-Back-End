@@ -36,11 +36,11 @@ To download this application localy follow these steps:
 
 - next enter this command: "echo "DB_NAME='ecommerce_db'
 DB_USER='root'
-DB_PW='' > ./.env"
+DB_PW='<<your mySQL password>>' > ./.env"
 
-- Back in the GItBash console type "node index" to start the application
+- Back in the GItBash console type "npm start" to start the application
 
-**Usage**: This was used for testing node.js and mySQL methods.
+**Usage**: This was used for testing sequelize methods.
 
 **Contributing**: open for contribution, keep in seperate branch
 
